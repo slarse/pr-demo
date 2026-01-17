@@ -1,0 +1,8 @@
+name: GitHub Actions Demo
+on: [push, pull_request]
+jobs:
+  check-file-sizes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: bash check_file_sizes.sh
